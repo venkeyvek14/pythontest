@@ -1,0 +1,13 @@
+version: "3.2"
+
+services:
+  lemone-backend:
+    platform: linux/amd64
+    image: <your_docker_repository>/lemone-backend:v1
+    restart: always
+    command: "--config /usr/config/config.toml"
+    volumes:
+      - $PWD/config.toml:/usr/config/config.toml
+      - $PWD/credentials.yaml:/usr/config/credentials.yaml
+    ports:
+      - 8000:8000

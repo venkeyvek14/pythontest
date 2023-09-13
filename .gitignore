@@ -1,0 +1,16 @@
+# Python cache directories
+__pycache__/
+*/__pycache__/
+
+# Other cache or temporary directories
+.cache/
+*.swp
+*.log
+*.db
+*.sqlite3
+
+# Ignore any compiled Python files, e.g., .pyc files
+*.pyc
+
+# Ignore local environment settings files
+.env
